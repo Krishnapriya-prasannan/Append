@@ -478,3 +478,130 @@ img[data-aos="fade-in"] {
     margin: 0 auto;
 }
 
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #D84315; /* Orange-Red */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff6f61; /* Orange-red shade */
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.market-summary, .stock-view {
+    background-color: #1a1a1a; /* Darker gray for contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.market-summary h2, .stock-view h2 {
+    margin-top: 0;
+}
+
+.graph {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.graph img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #ff6f61; /* Orange-red shade */
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #333; /* Darker gray for even rows */
+}
+
+table tbody tr:hover {
+    background-color: #444; /* Lighter gray for hover effect */
+}
