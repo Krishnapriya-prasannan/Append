@@ -44,7 +44,7 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #dd1d16;
             color: white;
             border: none;
             border-radius: 5px;
@@ -53,7 +53,7 @@
         }
 
         button:hover {
-            background-color: #218838;
+            background-color: #df1d16;
         }
 
         .results {
@@ -87,7 +87,7 @@
         </form>
 
         <div class="results" id="results">
-            <!-- Matching companies will be displayed here -->
+            <!-- All companies will be displayed here -->
         </div>
     </div>
 
@@ -107,33 +107,22 @@
                 { name: "WindWorks Ltd.", location: "New York", minBudget: 12000, maxBudget: 55000, minArea: 100, maxArea: 900 }
             ];
 
-            // Clear previous results
+            // Display all companies
             const resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = '';
 
-            // Filter and display matching companies
             companies.forEach(company => {
-                if (company.location.toLowerCase() === location.toLowerCase() &&
-                    budget >= company.minBudget && budget <= company.maxBudget &&
-                    area >= company.minArea && area <= company.maxArea) {
-                    const companyDiv = document.createElement('div');
-                    companyDiv.classList.add('company');
-                    companyDiv.innerHTML = `<h3>${company.name}</h3>
-                                            <p>Location: ${company.location}</p>
-                                            <p>Budget: $${company.minBudget} - $${company.maxBudget}</p>
-                                            <p>Area: ${company.minArea} - ${company.maxArea} sq. ft.</p>`;
-                    resultsDiv.appendChild(companyDiv);
-                }
+                const companyDiv = document.createElement('div');
+                companyDiv.classList.add('company');
+                companyDiv.innerHTML = `<h3>${company.name}</h3>
+                                        <p>Location: ${company.location}</p>
+                                        <p>Budget: $${company.minBudget} - $${company.maxBudget}</p>
+                                        <p>Area: ${company.minArea} - ${company.maxArea} sq. ft.</p>`;
+                resultsDiv.appendChild(companyDiv);
             });
-
-            if (resultsDiv.innerHTML === '') {
-                resultsDiv.innerHTML = '<p>No matching companies found.</p>';
-            }
         });
     </script>
 
 </body>
 
 </html>
-
-  
